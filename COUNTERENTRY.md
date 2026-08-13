@@ -305,6 +305,12 @@ The honest position relative to that literature: it does comment ↔ code at met
 
 Review-gated writes, supersede-based contradiction detection, point-in-time recall and never-retrieved detection (Link); stale-memory detection on code change (Omni-Memory); team-scale entity registries with code-stamped fields (stigmergy).
 
+**GitHub Copilot Memory** (github.blog, January 2026) is the closest shipped system to the `store ↔ code` instrument, and the closest thing to a disproof of its novelty here. Memories are stored with citations to specific code locations and verified against the current branch at the moment of use rather than curated offline. Tested by deliberately seeding repositories with adversarial memories contradicting the codebase, agents consistently detected the contradictions and corrected the records — the pool self-healed with no human review.
+
+Two design choices differ, and both are bets rather than improvements. Theirs verifies lazily, at point of use; this verifies on change, which costs more and catches claims nobody happens to query. Theirs heals unattended; this refuses to write without a human, per invariant 1. Their approach is proven at a scale this has never seen. State it that way.
+
+**Slite** describes detecting when documentation has drifted from reality, drafting the fix, and routing every change through human approval. If accurate, the propose-don't-file posture is not distinguishing either. ⚠ Verify against Slite's own documentation before citing — this entry currently rests on a third-party comparison article, not a primary source.
+
 ### What may be claimed, carefully
 
 The required counter-entry; premise-based decision invalidation; decorrelated instruments as an explicit ranking rule; return conditions rather than dates; the per-rule precision ledger; reversibility as the gate key; cross-party reconciliation; a design for its own neglect.

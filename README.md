@@ -4,21 +4,21 @@
 
 Records about software go stale silently. A note says a dashboard requires admin
 access; the permission check returns `true` for everyone and always has. Nothing
-crashes. Error monitoring watches for failure, and this isn't a failure — it's a
+crashes. Error monitoring watches for failure, and this isn't a failure. It's a
 function working perfectly while being wrong.
 
 The only thing that catches it is putting two independent records of the same
 system side by side and asking whether they agree. This is a specification for
 doing that automatically.
 
-The name is the mechanism: **every claim that matters carries a second,
+The name is the mechanism. **Every claim that matters carries a second,
 independent entry, and the job is finding the pairs that stopped agreeing.**
 
 ---
 
-## Status — read this before anything else
+## Status: read this before anything else
 
-**What exists:** a manual practice — a person, an agent, and markdown and JSON
+**What exists:** a manual practice. A person, an agent, and markdown and JSON
 files. Four findings produced by it.
 
 **What does not exist:** the scheduler, the precision ledger, counter-entry
@@ -34,7 +34,7 @@ generated from this spec should describe an unbuilt component as existing.
 
 | File | What it is |
 |---|---|
-| `COUNTERENTRY.md` | The specification. Vocabulary, passes, invariants, status, prior art. Vendor-neutral — nothing depends on a particular model or harness. |
+| `COUNTERENTRY.md` | The specification. Vocabulary, passes, invariants, status, prior art. Vendor-neutral: nothing depends on a particular model or harness. |
 
 Drop `COUNTERENTRY.md` at the root of a project. Any agent harness that reads a
 project context file will pick it up. If yours expects a specific filename,
@@ -47,8 +47,8 @@ ever one copy to keep true.
 
 The foundation is **Andrej Karpathy's LLM Wiki** pattern (gist, 4 April 2026):
 compile once rather than retrieve per query, let the model own the bookkeeping,
-keep everything in plain versioned files. If you haven't read it, read it first —
-it's one page and it's the best statement of the idea anyone has written.
+keep everything in plain versioned files. If you haven't read it, read it first.
+It's one page and it's the best statement of the idea anyone has written.
 
 Contradiction-hunting is not an addition here; his *lint* operation already looks
 for it. What differs is what triggers a check, what it's checked against, and
@@ -56,7 +56,7 @@ what governs the output. Structurally this is his pattern with five insertions.
 Remove them and the LLM Wiki is what remains.
 
 §11 of the spec is the full prior-art accounting, including what has already been
-shipped by others and what may — carefully — be claimed as new. It is written as
+shipped by others and what may, carefully, be claimed as new. It is written as
 a guardrail against overclaiming. Read it before quoting this project anywhere.
 
 ---
@@ -66,9 +66,9 @@ a guardrail against overclaiming. Read it before quoting this project anywhere.
 The method isn't ownable and isn't meant to be. It's published so it can be used,
 argued with, and improved. Attribution is the only thing asked in return.
 
-**It's meant to be argued with.** If you've built something like this — especially
-the part about flagging decisions when their premises die — the author would
-like to hear how it went.
+**It's meant to be argued with.** If you've built something like this, especially
+the part about flagging decisions when their premises die, I'd like to hear how
+it went.
 
 ---
 
@@ -80,11 +80,8 @@ Use it, adapt it, build on it commercially. Just credit the source.
 
 ---
 
-<!-- ─── FILL THESE IN BEFORE MAKING THE REPO PUBLIC ─── -->
-<!-- 1. Replace [ARTICLE URL] below with the live post URL, then click it to confirm it loads. -->
-<!-- 2. Replace [YOUR NAME] with the byline you're publishing under — it must match the article and the DOI exactly. -->
-<!-- 3. Delete these comment lines. -->
+The essay this came from: https://github.com/pollockchris083-arch/counterentry/blob/main/ESSAY.md
 
-The essay this came from: [ARTICLE URL]
+Archived and citable: https://doi.org/10.5281/zenodo.21924843
 
-[YOUR NAME], August 2026.
+Chris Pollock, August 2026.
