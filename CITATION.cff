@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use or build on this work, please cite it as below."
+title: "Counter Entry: a knowledge structure that notices when it stops being true"
+authors:
+  - family-names: "Pollock"
+    given-names: "Chris"
+doi: 10.5281/zenodo.21924843
+date-released: 2026-08-13
+url: "https://github.com/pollockchris083-arch/counterentry"
+license: CC-BY-4.0
