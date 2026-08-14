@@ -1,5 +1,7 @@
 # A knowledge base that notices when it stops being true
 
+> **Correction, 14 August 2026.** The section below headed *The part I haven't found anywhere is what to do about decisions* is wrong as written. Vigil, described by its author in the comment thread of the Karpathy gist on 12 August 2026, attaches assumptions to decisions and flags the decision when new evidence moves an assumption. Section 11 of the spec now records this and the corresponding novelty claim has been withdrawn. The original text below is unchanged.
+
 I keep records for a handful of internal apps at a small company where I work. Ordinary stuff: what each app does, who it's for, what we decided and why.
 
 One of those records said a dashboard required admin access.
