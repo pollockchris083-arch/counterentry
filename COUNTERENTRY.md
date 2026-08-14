@@ -316,13 +316,15 @@ Two design choices differ, and both are bets rather than improvements. Theirs ve
 The differences are real and narrower than this document first implied. Vigil watches external sources on a schedule and tests them against assumptions; this tests claims against a codebase, on commit, with a file and line range carried on the claim. Vigil is a hosted product; this is a specification, most of which section 2 records as unbuilt. Neither difference makes premise-based decision invalidation novel here.
 
 It was posted the day before this document was published, one scroll below the gist this section opens by crediting, and the search that produced this section missed it. Proximity is not coverage.
+
 ### What may be claimed, carefully
 
 The required counter-entry; decorrelated instruments as an explicit ranking rule; return conditions rather than dates; the per-rule precision ledger; reversibility as the gate key; cross-party reconciliation; a design for its own neglect.
 
-Withdrawn 14 August 2026: premise-based decision invalidation. Vigil ships it. What survives of that claim is smaller and worth stating exactly: the coupling of premise invalidation to a codebase rather than to external sources, and the dormancy lifecycle, for which the nearest published thing found is the ninety-day cycle field in SIGN.
+**Withdrawn 14 August 2026: premise-based decision invalidation.** Vigil ships it. What survives of that claim is smaller and worth stating exactly: the coupling of premise invalidation to a codebase rather than to external sources, and the dormancy lifecycle, for which the nearest published thing found is the ninety-day cycle field in SIGN.
 
-Not found elsewhere means not located in a search designed by this project's author. It is not proof of novelty. This section has now been wrong once.
+*Not found elsewhere* means not located in a search designed by this project's author. It is not proof of novelty. This section has now been wrong once.
+
 ---
 
 ## 12 · Known failure modes
