@@ -309,14 +309,20 @@ Review-gated writes, supersede-based contradiction detection, point-in-time reca
 
 Two design choices differ, and both are bets rather than improvements. Theirs verifies lazily, at point of use; this verifies on change, which costs more and catches claims nobody happens to query. Theirs heals unattended; this refuses to write without a human, per invariant 1. Their approach is proven at a scale this has never seen. State it that way.
 
-**Slite** describes detecting when documentation has drifted from reality, drafting the fix, and routing every change through human approval. If accurate, the propose-don't-file posture is not distinguishing either. ⚠ Verify against Slite's own documentation before citing — this entry currently rests on a third-party comparison article, not a primary source.
+**Slite** describes detecting when documentation has drifted from reality, drafting the fix, and routing every change through human approval. Verified 13 August 2026 against Slite's own changelog and product pages rather than the third-party article this entry previously rested on: the agent cross-references documents against each other and against activity in twenty or more connected tools, proposes fixes, and routes every change through a human review queue showing a full document diff before anything is applied. Shipping on their paid tier since 9 June 2026. The propose-don't-file posture is therefore not distinguishing, and neither is reporting a contradiction between two records.
 
+**Vigil** (trustvigil.com, described by its author in the comment thread of the Karpathy gist, 12 August 2026) is the closest published system to the decision layer of this method. It compiles sources into atomic claims carrying provenance back to the source passage, attaches the assumptions under a decision as explicit falsifiable conditions, and flags the decision for review when new evidence moves one of them. Its stated principle is that the model proposes, the system verifies what it can, and humans decide. That is invariant 1 of this document, arrived at independently.
+
+The differences are real and narrower than this document first implied. Vigil watches external sources on a schedule and tests them against assumptions; this tests claims against a codebase, on commit, with a file and line range carried on the claim. Vigil is a hosted product; this is a specification, most of which section 2 records as unbuilt. Neither difference makes premise-based decision invalidation novel here.
+
+It was posted the day before this document was published, one scroll below the gist this section opens by crediting, and the search that produced this section missed it. Proximity is not coverage.
 ### What may be claimed, carefully
 
-The required counter-entry; premise-based decision invalidation; decorrelated instruments as an explicit ranking rule; return conditions rather than dates; the per-rule precision ledger; reversibility as the gate key; cross-party reconciliation; a design for its own neglect.
+The required counter-entry; decorrelated instruments as an explicit ranking rule; return conditions rather than dates; the per-rule precision ledger; reversibility as the gate key; cross-party reconciliation; a design for its own neglect.
 
-*Not found elsewhere* means not located in a search designed by this project's author. It is not proof of novelty.
+Withdrawn 14 August 2026: premise-based decision invalidation. Vigil ships it. What survives of that claim is smaller and worth stating exactly: the coupling of premise invalidation to a codebase rather than to external sources, and the dormancy lifecycle, for which the nearest published thing found is the ninety-day cycle field in SIGN.
 
+Not found elsewhere means not located in a search designed by this project's author. It is not proof of novelty. This section has now been wrong once.
 ---
 
 ## 12 · Known failure modes
