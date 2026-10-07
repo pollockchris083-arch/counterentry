@@ -1,10 +1,30 @@
 cff-version: 1.2.0
 message: "If you use or build on this work, please cite it as below."
-title: "Counter Entry: a knowledge structure that notices when it stops being true"
+title: "Counterentry: a knowledge structure that notices when it stops being true"
+version: "3"
+doi: 10.5281/zenodo.21924843
+date-released: 2026-10-06
 authors:
   - family-names: "Pollock"
     given-names: "Chris"
-doi: 10.5281/zenodo.21924843
-date-released: 2026-08-13
+abstract: >-
+  A specification for keeping records that people and AI assistants act on.
+  Every load-bearing claim is paired with a second, independent record of the
+  same fact, and the system reports the pairs that no longer agree. Version 3
+  adds six weeks of field notes from a daily personal deployment.
+keywords:
+  - knowledge management
+  - LLM agents
+  - verification
+  - personal assistant
+  - LLM wiki
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.21924843
+    description: "Zenodo concept DOI. Resolves to the latest archived version (version 2 as of October 2026)."
+  - type: doi
+    value: 10.5281/zenodo.21924844
+    description: "Version 2, archived 13 August 2026."
+repository-code: "https://github.com/pollockchris083-arch/counterentry"
 url: "https://github.com/pollockchris083-arch/counterentry"
 license: CC-BY-4.0
